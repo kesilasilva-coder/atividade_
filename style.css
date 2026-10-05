@@ -1,0 +1,196 @@
+ . {
+
+ }
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+body {
+    min-height: 100vh;
+    background: #0d1021;
+    color: white;
+    font-family: Arial, sans-serif;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dashboard {
+    width: 900px;
+
+    display: grid;
+    grid-template-columns: 210px 1fr;
+    gap: 20px;
+}
+
+/* PERFIL */
+
+.profile {
+    background: #1d2040;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.profile-top {
+    background: #5b5ce2;
+    padding: 30px 25px;
+    height: 250px;
+}
+
+.profile img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 3px solid white;
+    margin-bottom: 25px;
+}
+
+.profile p {
+    color: #d5d5ff;
+    font-size: 13px;
+}
+
+.profile h1 {
+    font-size: 28px;
+    font-weight: 400;
+    margin-top: 5px;
+}
+
+.periods {
+    padding: 20px 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.periods button {
+    border: none;
+    background: transparent;
+    color: #aaaed5;
+    text-align: left;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.periods button:hover,
+.periods .active {
+    color: white;
+}
+
+/* CARDS */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    height: 215px;
+    border-radius: 15px;
+    padding-top: 45px;
+    overflow: hidden;
+    background: #1d2040;
+}
+
+.card::before {
+    content: "";
+    display: block;
+    height: 45px;
+    margin-top: -45px;
+}
+
+.work::before {
+    background: #ff8b64;
+}
+
+.play::before {
+    background: #56c2e6;
+}
+
+.study::before {
+    background: #ff5c7c;
+}
+
+.exercise::before {
+    background: #4bcf83;
+}
+
+.social::before {
+    background: #7536d3;
+}
+
+.self-care::before {
+    background: #f1c75b;
+}
+
+.card-title {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px 0;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.card-title span:last-child {
+    color: #aaaed5;
+    letter-spacing: 2px;
+}
+
+.card strong {
+    display: block;
+    padding: 20px 20px 5px;
+    font-size: 38px;
+    font-weight: 300;
+}
+
+.card p {
+    padding: 0 20px;
+    color: #aaaed5;
+    font-size: 12px;
+}
+
+/* CELULAR */
+
+@media (max-width: 700px) {
+
+    body {
+        padding: 30px 20px;
+    }
+
+    .dashboard {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .profile-top {
+        height: auto;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .profile img {
+        margin: 0;
+    }
+
+    .profile h1 {
+        font-size: 22px;
+    }
+
+    .periods {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        height: 180px;
+    }
+}

@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0d1224;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+.container {
+    width: 1100px;
+    margin: 100px auto;
+    display: grid;
+    grid-template-columns: 255px 1fr;
+    gap: 30px;
+}
+
+.perfil {
+    background: #20265a;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.perfil-topo {
+    background: #5846e8;
+    padding: 35px;
+    height: 355px;
+    border-radius: 15px;
+}
+
+.perfil img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid white;
+    margin-bottom: 35px;
+}
+
+.perfil p {
+    color: #aaaed1;
+    margin-bottom: 8px;
+}
+
+.perfil h1 {
+    font-size: 32px;
+    font-weight: normal;
+}
+
+.menu {
+    padding: 25px 35px;
+}
+
+.menu p {
+    margin-bottom: 20px;
+    color: white;
+}
+
+.menu p:last-child {
+    color: #777db5;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.card {
+    height: 245px;
+    border-radius: 15px;
+    padding: 28px;
+    background: #20265a;
+}
+
+.titulo {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.titulo span {
+    float: right;
+    color: #bbbfe5;
+}
+
+.card strong {
+    font-size: 52px;
+    font-weight: normal;
+}
+
+.card p {
+    color: #aaaed1;
+    margin-top: 10px;
+}
+
+/* Cores dos cartões */
+
+.work {
+    border-top: 45px solid #ff8b65;
+}
+
+.play {
+    border-top: 45px solid #55c2e5;
+}
+
+.study {
+    border-top: 45px solid #ff5b7d;
+}
+
+.exercise {
+    border-top: 45px solid #4dcc83;
+}
+
+.social {
+    border-top: 45px solid #793bd1;
+}
+
+.selfcare {
+    border-top: 45px solid #f2c95c;
+}
